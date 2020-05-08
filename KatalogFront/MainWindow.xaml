@@ -1,0 +1,62 @@
+﻿<Window x:Class="KatalogFront.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KatalogFront"
+        mc:Ignorable="d"
+       Height="580" Width="800"
+        FontFamily="The Medic Demo"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="20" />
+            <ColumnDefinition Width ="auto" />
+            <ColumnDefinition Width ="auto" />
+            <ColumnDefinition Width ="auto" />
+            <ColumnDefinition Width ="auto" />
+            <ColumnDefinition Width ="auto" />
+            <ColumnDefinition Width ="*" />
+            <ColumnDefinition Width ="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="3" Grid.Row="1" FontSize="30"
+                   Text="Log in!" HorizontalAlignment="Center" />
+
+        <Button Name ="FbLogInButton" Grid.Column="1" Grid.Row ="2" Width="128" Height="128" Margin ="10" >
+            <Image Source = "FbLoginIcon.png"/>
+        </Button>
+
+        <Button Name ="GoogleLogInButton" Grid.Column="3" Grid.Row ="2" Width="128" Height="128" Margin ="10">
+            <Image Source = "GoogleLoginIcon.png"/>
+        </Button>
+
+        <Button Name ="SMSLogInButton" Grid.Column="5" Click="Sms" Grid.Row ="2" Width="128" Height="128" Margin ="10">
+            <Image Source = "SMSLoginIcon.png"/>
+        </Button>
+
+        <Button Name ="TinderTokenLogInButton" Grid.Column="2" Click="Tinder" Grid.Row ="3" Width="128" Height="128" Margin ="10">
+            <Image Source = "TinderLoginIcon.png"/>
+        </Button>
+
+        <Button Name ="FbTokenLogInButton" Grid.Column="4" Grid.Row ="3" Width="128" Height="128" Margin ="10">
+            <Image Source = "FbLoginIcon.png"/>
+        </Button>
+
+        <Button Name ="Lopgin" Grid.Column="4" Grid.Row ="3" Width="128" Height="128" Margin ="10">
+            <Image Source = "FbLoginIcon.png"/>
+        </Button>
+
+    </Grid>
+</Window>
+
